@@ -5,12 +5,16 @@ import './index.css'
 function Input() {
 
   function handleChange(event) {
-    console.log(event.target.value);
+    let enter = event.target.value;
+    console.log(enter)
+    let tab= []
+    tab += enter
+    console.log(tab)
   }
 
   return (
     <div className="SearchBar">
-      <input type="text" minlength="0" maxlength="1" name="search" onChange={handleChange} className="Input"/>
+      <input type="text" minLength="0" maxLength="1" name="search" onChange={handleChange} className="Input"/>
     </div>
   );
 }
