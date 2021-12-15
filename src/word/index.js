@@ -2,7 +2,7 @@ import React, {
   useEffect, useState
 } from 'react'
 import axios from 'axios';
-import { map, size } from 'lodash';
+import { map } from 'lodash';
 import '../word/index.css'
 
 function Word () {
@@ -16,12 +16,6 @@ function Word () {
       }
       fetchAnimals();
     }, [])
-
-  {map(animals, (animal) => (
-    animal.word,
-    console.log(size(animal.word))
-  ))}
-
 
   return (
     <React.Fragment className="SecretWord">
