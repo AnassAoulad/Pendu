@@ -3,8 +3,7 @@ import React, {
 } from 'react'
 import axios from 'axios';
 import { map } from 'lodash';
-import { Bar } from "react-chartjs-2"
-// import { API_URL } from '../settings';
+import "../classement/index.css"
 
 function Classement() {
 

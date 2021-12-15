@@ -3,10 +3,10 @@ import React, {
 } from 'react'
 import axios from 'axios';
 import { map, size } from 'lodash';
+import '../word/index.css'
 
 function Word () {
   const [animals, setAnimals] = useState([]);
-  const secretWord = ""
     useEffect(() => {
       const fetchAnimals = async () => {
         const result = await axios(
@@ -24,10 +24,9 @@ function Word () {
 
 
   return (
-    <React.Fragment>
+    <React.Fragment className="SecretWord">
       {map(animals, (animal) => (
-        <p>{animal.word}
-        {console.log(size(animal.word))}</p>
+        <h2>{animal.word}</h2>
       ))}
     </React.Fragment>
   )

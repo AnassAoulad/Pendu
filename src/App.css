@@ -1,18 +1,24 @@
 /* General Styles */
 
+h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
 .bg {
-  height: 100vh;
-  padding: 50px;
   overflow: hidden;
   transition: 0.2s all linear;
+  background-color: grey;
 }
 
 .heading {
   text-transform: uppercase;
   transition: 0.2s all linear;
+  text-align: center;
 }
 
 .btn {
+  text-align: center;
   border: none;
   padding: 10px 30px;
   border-radius: 4px;
@@ -23,7 +29,6 @@
 }
 
 .para {
-  width: 70vw;
   transition: 0.2s all linear;
 }
 
@@ -65,4 +70,9 @@
 .btn-dark {
   background-color: #fff;
   color: #222;
+}
+
+.classement {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

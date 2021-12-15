@@ -1,15 +1,11 @@
 // eslint-disable-next-line
 import React from "react";
-import './index.css'
+import '../input/index.css'
 
 function Input() {
 
   function handleChange(event) {
     let enter = event.target.value;
-    console.log(enter)
-    let tab= []
-    tab += enter
-    console.log(tab)
   }
 
   return (

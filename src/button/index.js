@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../dark-mode";
-
+import "../button/index.css";
 
 export default function SwitchButton() {
   const theme = useContext(ThemeContext);
@@ -16,7 +16,7 @@ export default function SwitchButton() {
 
   return (
     <button className={`btn ${darkMode ? "btn-dark" : "btn-light"}`} onClick={onClick}>
-      {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      {darkMode ? "Mode Lumineux" : "Mode Sombre"}
     </button>
   );
 }

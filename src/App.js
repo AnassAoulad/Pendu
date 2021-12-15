@@ -12,13 +12,20 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div className={`bg ${darkMode ? "bg-dark" : "bg-light"}`}>
-      <h1 className={`heading ${darkMode ? "heading-dark" : "heading-light"}`}>Pendu</h1>
-        <div className={`para ${darkMode ? "para-dark" : "para-light"}`}>
-          <React.Fragment>
-            <SwitchButton />
+      <div className={`para ${darkMode ? "para-dark" : "para-light"}`}>
+        <React.Fragment>
+          <div className='header'>
+            <div className="Button">
+              <SwitchButton />
+            </div>
+            <h1 className={`heading ${darkMode ? "heading-dark" : "heading-light"}`}>Pendu</h1>
+          </div>
             <Word/>
-            <Input/>
+          <Input/>
+          <h2>👇Classement👇</h2>
+          <div className="classement">
             <Classement/>
+          </div>
         </React.Fragment>
       </div>
     </div>
